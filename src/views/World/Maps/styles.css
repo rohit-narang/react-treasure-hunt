@@ -1,0 +1,19 @@
+.tile {
+
+}
+
+.rock {
+    background-image: url('./Camp_Fire_icon.png');
+}
+
+.tree {
+    background-image: url('./evergreen-tree.png');
+}
+
+.treasure {
+    background-image: url('./images.jpg')
+}
+
+.bricks {
+    background-image: url('./bricks2_1.png') 
+}
