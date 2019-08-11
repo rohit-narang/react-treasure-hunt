@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-treasure-hunt/static/css/main.b4aed523.chunk.css",
+    "main.js": "/react-treasure-hunt/static/js/main.d748935d.chunk.js",
+    "main.js.map": "/react-treasure-hunt/static/js/main.d748935d.chunk.js.map",
+    "runtime~main.js": "/react-treasure-hunt/static/js/runtime~main.818db641.js",
+    "runtime~main.js.map": "/react-treasure-hunt/static/js/runtime~main.818db641.js.map",
+    "static/js/2.cae55553.chunk.js": "/react-treasure-hunt/static/js/2.cae55553.chunk.js",
+    "static/js/2.cae55553.chunk.js.map": "/react-treasure-hunt/static/js/2.cae55553.chunk.js.map",
+    "index.html": "/react-treasure-hunt/index.html",
+    "precache-manifest.7b4f677f28f02c55064d5ca6c5514c1d.js": "/react-treasure-hunt/precache-manifest.7b4f677f28f02c55064d5ca6c5514c1d.js",
+    "service-worker.js": "/react-treasure-hunt/service-worker.js",
+    "static/css/main.b4aed523.chunk.css.map": "/react-treasure-hunt/static/css/main.b4aed523.chunk.css.map",
+    "static/media/myplayer.png": "/react-treasure-hunt/static/media/myplayer.3a1dda06.png"
+  }
+}
