@@ -62,6 +62,11 @@ const Player = (props) => {
     if(newPos[0] > 696 || newPos[0] < 0 || newPos[1]<0 || newPos[1] > 475){
       return oldpos;
     }
+     let x = newPos[0]/58;
+     let y = newPos[1]/95;
+     if(props.tiles[y][x]>3){
+      return oldpos;
+     }
     return newPos;
   }
     
@@ -87,6 +92,8 @@ export default connect(state => {
     ...state.player,
     position: state.player.position,
     playerLocation: state.player.playerLocation,
-    walkIndex: state.player.walkIndex
+    walkIndex: state.player.walkIndex,
+    ...state.maps,
+    tiles: state.maps.tiles
   }
 })(Player);

@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Player from '../Player';
 import Maps from './Maps';
-import {tiles} from '../../data/Maps/1/index';
-const World = () => {
+import store from '../../store/store';
+import {connect} from 'react-redux';
+import {ADD_TILES} from '../../actions/actionType';
+import {tiles} from '../../data/Maps/1';
+const World = (props) => {
+    useEffect(()=>{
+        store.dispatch({type: 'ADD_TILES', payload: tiles})
+    })
     return (
         <div style={{
             position: 'relative',
@@ -13,9 +19,13 @@ const World = () => {
             margin: 'auto'
         }}>
             <Player />
-            <Maps value={tiles}/>
+            <Maps value={props.tiles}/>
         </div>
     );
 }
-
-export default World;
+const mapStateToProps = (state) => {
+    return{
+        tiles: state.maps.tiles
+    } 
+}
+export default connect(mapStateToProps)(World);

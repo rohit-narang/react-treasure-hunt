@@ -7,3 +7,5 @@ export const MOVE_SOUTH = 'BASE/MOVE_SOUTH';
 export const MOVE_WEST = 'BASE/MOVE_WEST';
 
 export const MOVE_EAST = 'BASE/MOVE_EAST';
+
+export const ADD_TILES = 'BASE/ADD_TILES';
