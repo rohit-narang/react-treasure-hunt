@@ -6,7 +6,7 @@ const initialState = {
 }
 const MapsReducer = (state = initialState, action) => {
     switch(action.type){
-        case 'ADD_TILES':
+        case ADD_TILES:
             return {
                 ...state,
                 tiles: action.payload

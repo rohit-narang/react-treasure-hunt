@@ -1,27 +1,29 @@
 import React from 'react';
-import {SPRITE_HEIGHT, SPRITE_WIDTH} from '../../../constants/index';
+import { SPRITE_HEIGHT, SPRITE_WIDTH } from '../../../constants/index';
 import './styles.css';
 
 const getTileType = (type) => {
-    switch(type){
+    switch (type) {
         case 0:
             return 'grass';
         case 4:
             return 'bricks';
-        case 5:
-            return 'tree';
-        case 6: 
+        case 6:
             return 'rock';
         case 7:
             return 'treasure';
+        case 9:
+            return 'sword';
+        default:
+            return;
     }
 }
 
 const MapRows = (props) => {
-    return(
+    return (
         <>
-            {props.tiles.map(tile => {
-                return <div className={`tile ${getTileType(tile)}`} style={{height: SPRITE_HEIGHT, width: SPRITE_WIDTH}}></div>
+            {props.tiles.map((tile, index) => {
+                return <div className={`tile ${getTileType(tile)}`} key={index} style={{ height: SPRITE_HEIGHT, width: SPRITE_WIDTH }}></div>
             })}
         </>
     );
@@ -39,10 +41,10 @@ const Maps = (props) => {
             flexWrap: 'wrap'
         }}
         >
-        {
-            props.value.map( row => {
-            return <MapRows tiles={row} />
-        })}
+            {
+                props.value.map((row, index) => {
+                    return <MapRows key={index} tiles={row} />
+                })}
         </div>
     );
 }

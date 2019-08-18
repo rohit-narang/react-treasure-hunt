@@ -2,15 +2,17 @@
   "name": "react-treasure-hunt",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rohit-narang.github.io/react-treasure-hunt",
+  "homepage": "https://rohit-narang.github.io/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "lodash": "^4.17.15",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "semantic-ui-react": "^0.87.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

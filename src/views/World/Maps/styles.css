@@ -2,18 +2,25 @@
 
 }
 
-.rock {
-    background-image: url('./Camp_Fire_icon.png');
+.grass{
+    background-color: rgb(174, 85, 28);
 }
 
-.tree {
-    background-image: url('./evergreen-tree.png');
+.rock {
+    background-image: url('./monkimage.png');
+    background-color: rgb(174, 85, 28); 
 }
 
 .treasure {
-    background-image: url('./images.jpg')
+    background-image: url('./treasure.png');
+    background-color: rgb(174, 85, 28);
 }
 
 .bricks {
-    background-image: url('./bricks2_1.png') 
+    background-image: url('./brick3.jpg') 
+}
+
+.sword {
+    background-image: url('./sword.png');
+    background-color: rgb(174, 85, 28);  
 }
